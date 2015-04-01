@@ -487,7 +487,7 @@ class Chosen extends AbstractChosen
   search_field_scale: ->
     if @is_multiple
       h = 0
-      w = 0
+      w = 300
 
       style_block = "position:absolute; left: -1000px; top: -1000px; display:none;"
       styles = ['font-size','font-style', 'font-weight', 'font-family','line-height', 'text-transform', 'letter-spacing']
@@ -504,7 +504,7 @@ class Chosen extends AbstractChosen
 
       f_width = @container.outerWidth()
 
-      if( w > f_width - 10 )
-        w = f_width - 10
+      # if( w > f_width - 10 )
+      #   w = f_width - 10
 
       @search_field.css({'width': w + 'px'})
